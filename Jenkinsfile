@@ -11,9 +11,9 @@ pipeline {
     }
 
     // ── Uncomment when NodeJS plugin is configured ──
-    // tools {
-    //     nodejs 'NodeJS-20'
-    // }
+    tools {
+         nodejs 'NodeJS-20'
+     }
 
     options {
         timestamps()
