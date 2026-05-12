@@ -12,7 +12,7 @@ pipeline {
 
     // ── Uncomment when NodeJS plugin is configured ──
     tools {
-         nodejs 'NodeJS'
+         nodejs 'nodeJS'
      }
 
     options {
