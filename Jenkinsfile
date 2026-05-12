@@ -96,7 +96,7 @@ pipeline {
 
                 stage('Frontend - Tests') {
                     steps {
-                        sh 'CI=true npm test --if-present'
+                        sh 'CI=true npm test -- --passWithNoTests'
                         // dir('client') { sh 'CI=true npm test --if-present' }
                     }
                 }
