@@ -211,7 +211,7 @@ pipeline {
         stage('Smoke Test') {
             steps {
                 sh '''
-                    sleep 5
+                    sleep 15
                     curl --fail --retry 5 --retry-delay 3 http://localhost:3000 || exit 1
                     echo "App is live!"
                 '''
