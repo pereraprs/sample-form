@@ -212,7 +212,7 @@ pipeline {
             steps {
                 sh '''
                     sleep 15
-                    curl --fail --retry 5 --retry-delay 3 http://localhost:3000 || exit 1
+                    curl --fail --retry 10 --retry-delay 5 http://172.17.0.1:3000 || exit 1
                     echo "App is live!"
                 '''
 
